@@ -1,18 +1,22 @@
 package com.anton.stockexchanger.entity;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 
-@Entity
+import javax.validation.constraints.Pattern;
+
+
+import javax.persistence.*;
+
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "customer")
+@Entity
 public class User {
 
     @Id
